@@ -11,7 +11,17 @@ namespace GenericsIntro
         static void Main(string[] args)
         {
             MyList<string> myList = new MyList<string>();
-            myList.Add("dincer");
+            myList.Add("0");
+            Console.WriteLine(myList.Length);
+            myList.Add("1");
+            Console.WriteLine(myList.Length);
+            myList.Add("2");
+            Console.WriteLine(myList.Length);
+            foreach (var item in myList.Items)
+            {
+                Console.WriteLine(item);
+            }
+
             Console.ReadLine();
         }
     }
